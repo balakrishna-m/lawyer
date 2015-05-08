@@ -1,0 +1,208 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-center {
+  text-align: center;
+}
+.tab-title {
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 0;
+}
+.under-line {
+  width: 100px;
+  height: 2px;
+  background-color: #727272;
+  margin: 0;
+}
+.separator {
+  width: 80px;
+  height: 3px;
+  background-color: #1a67d2;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+h3 {
+  margin-bottom: 30px;
+}
+.container {
+  border: 10px solid #1a67d2;
+  color: #727272;
+  box-sizing: border-box;
+}
+.header-icons {
+  color: #727272;
+  padding: 10px 0;
+}
+.header-icons .phone-icon {
+  background: url('../img/phone.png') no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+.header-icons .email-icon {
+  background: url('../img/email.png') no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+.header-icons .twitter-icon {
+  background: url('../img/twitter.png') no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+.header .align-middle {
+  width: 180px;
+}
+.header .align-middle .tab-title {
+  text-align: left;
+}
+.header .logo {
+  background: url('../img/logo.png') no-repeat center center;
+  width: 180px;
+  height: 100px;
+  position: relative;
+  right: 50px;
+}
+.recommended-lawyers {
+  width: 60%;
+  margin: 60px auto 0 auto;
+}
+.what-we-do .align-middle {
+  width: 25%;
+  text-align: center;
+}
+.what-we-do .shape-round {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  background-color: #1a67d2;
+  margin: 0 auto;
+}
+.our-players .shape-round {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+  background-color: #beb4ad;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.our-players .shape-round img {
+  width: 150px;
+  height: 150px;
+}
+.feeds .shape-round {
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+  background-color: #b9b9b9;
+  margin: 0 auto;
+  padding-top: 57px;
+}
+.contact-us .align-middle {
+  width: 30%;
+}
+.contact-us .text-input {
+  height: 231px;
+}
+.contact-us .contact-input {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border: 0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #eeeeee;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+.contact-us .contact-input:focus {
+  outline: none;
+}
+.contact-us textarea {
+  width: 90%;
+  resize: none;
+  border: none;
+  background-color: #eeeeee;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  height: 205px;
+  padding: 5px 10px;
+}
+.contact-us textarea:focus {
+  outline: none;
+}
+.contact-us .submit-btn {
+  border: 3px solid #1a67d2;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #1a67d2;
+  padding: 6px 40px;
+  margin-bottom: 30px;
+}
+.contact-us .submit-btn:hover {
+  color: #fff;
+  background-color: #1a67d2;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #eee;
+}
+footer span {
+  color: #1a67d2;
+}
+.add-lawyer input {
+  border: none;
+  background-color: #eee;
+  width: 300px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 10px 0 20px;
+  margin: 10px;
+}
+.add-lawyer textarea {
+  width: 500px;
+  height: 250px;
+  resize: none;
+  background-color: #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+}
+.add-lawyer .current-location input {
+  width: 500px;
+}
+.finished button {
+  width: 500px;
+  background-color: #1a67d2;
+  color: #fff;
+  border: none;
+  height: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

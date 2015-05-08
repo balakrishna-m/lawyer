@@ -30,13 +30,13 @@
                    <a href="javascript:"><span class="align-middle twitter-icon"></span></a>
                </div>
            </div>
-           <div class="header text-center wrapper">
+           <div class="header wrapper text-center">
                <div class="align-middle">
                     <p class="tab-title">home</p>
                     <p class="under-line"></p>
                 </div>
                <div class="align-middle">
-                    <p class="tab-title">About</p>
+                    <p class="tab-title"><a href="index.html">About</a></p>
                     <p class="under-line"></p>
                 </div>
                 <div class="logo align-middle">
@@ -47,7 +47,7 @@
                     <p class="under-line"></p>
                 </div>
                 <div class="align-middle">
-                    <p class="tab-title">Recommended Lawyers</p>
+                    <p class="tab-title"><a href="recommended.html">Recommended Lawyers</a></p>
                     <p class="under-line"></p>
                 </div>
            </div>
@@ -58,41 +58,50 @@
            </div>
            <div class="search-lawyers text-center sections wrapper">
               <h3>Search Lawyers</h3>
-              <div><input type="text"></div>
+              <div>
+                <ul>
+                    <li><input type="text"></li>
+                    <li>hello</li>
+                    <li>hi</li>
+                    <li>test</li>
+                </ul>
+              </div>
            </div>
-           <div class="add-lawyer text-center sections wrapper">
-               <h3>Add Lawyers</h3>
-               <div class="raw">
-                 <h4>Your Details</h4>
+           <form action="">
+               <div class="add-lawyer text-center sections wrapper hide">
+                   <h3>Add Lawyers</h3>
+                   <div class="raw">
+                     <h4>Your Details</h4>
+                     <p>
+                       <input type="text" placeholder="Name">
+                       <input type="text" placeholder="Email">
+                       <input type="text" placeholder="Mobile Number">
+                     </p>
+                   </div>
+                   <div class="raw">
+                     <h4>Profile Details</h4>
+                     <p>
+                       <input type="text" placeholder="Designation">
+                       <input type="text" placeholder="Age">
+                       <input type="text" placeholder="Experience">
+                     </p>
+                   </div>
+                   <div class="raw current-location">
+                     <h4>Current Location</h4>
+                     <input type="text" placeholder="state">
+                   </div>
+                   <div class="raw">
+                     <h4>About You</h4>
+                     <textarea name="" id="" placeholder="Brief description about you"></textarea>
+                   </div>
+               </div>
+               <div class="finished wrapper text-center">
+                <h4>Finished ?</h4>
                  <p>
-                   <input type="text" placeholder="Name">
-                   <input type="text" placeholder="Email">
-                   <input type="text" placeholder="Mobile Number">
+                  <button type="submit">YEP,SUBMIT THIS</button>
                  </p>
                </div>
-               <div class="raw">
-                 <h4>Profile Details</h4>
-                 <p>
-                   <input type="text" placeholder="Designation">
-                   <input type="text" placeholder="Age">
-                   <input type="text" placeholder="Experience">
-                 </p>
-               </div>
-               <div class="raw current-location">
-                 <h4>Current Location</h4>
-                 <input type="text" placeholder="state">
-               </div>
-               <div class="raw">
-                 <h4>About You</h4>
-                 <textarea name="" id="" placeholder="Brief description about you"></textarea>
-               </div>
-           </div>
-           <div class="finished wrapper text-center">
-            <h4>Finished ?</h4>
-             <p>
-              <button >YEP,SUBMIT THIS</button>
-             </p>
-           </div>
+           </form>
            <footer>
                <p>Copyright <span>@lawyers4u</span> 2014, All right reserved</p>
            </footer>

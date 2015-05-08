@@ -10,6 +10,9 @@
     border-radius:@radius;  
 }
 //helper classes
+.hide{
+	display: none;
+}
 .left{
 	float: left;
 }
@@ -182,6 +185,30 @@ footer{
   	}
 }
 //recommonded
+.search-lawyers{
+	ul{
+		padding: 0; 
+		background-color: #eee;
+		width: 500px;
+		margin: 0 auto;
+		.border-radius(5px);
+		li{
+			padding: 3px 10px;
+			text-align: left;
+			list-style-type: none;
+			cursor: pointer;
+			input{
+				border:none;
+				background-color: #eee;
+				width: 100%;
+				.border-radius(10px);
+				height: 35px;
+				background: url('../img/search.png') no-repeat 450px center;
+				padding: 0 45px 0 0;
+			}
+		}
+	}
+}
 .add-lawyer{
 	input{
 		border:none;

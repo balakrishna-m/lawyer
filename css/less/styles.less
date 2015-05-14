@@ -27,6 +27,30 @@
 .text-center{
 	text-align: center;
 }
+.blue-btn{
+	color: #fff;
+	border: none;
+	background-color:@color-blue;
+	.border-radius(2px);
+	box-shadow :0 0 3px @color-blue;
+	font-size: 16px;
+	font-family: Lato-Thin; 
+}
+.btn-green{
+  color: #ecf8f3;
+  background: #2cbe8f;
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    &:hover{
+    	text-decoration: none;
+    }
+}
 h2{
 	font-size: 40px;
 	font-family: Lato-Bold;
@@ -41,6 +65,19 @@ h4{
 	font-size: 24px;
 	font-family: Lato-Light;
 	color: @title-color;
+}
+select{
+	border:none;
+	background-color: #eee;
+	width: 300px;
+	.border-radius(10px);
+	height: 50px;
+	padding: 0 10px 0 20px;
+	margin: 10px;
+	&:focus{
+		outline: none;
+	}
+
 }
 .tab-title{
 	padding: 5px 0px 5px 0px;
@@ -71,11 +108,12 @@ h4{
 h3{
 	margin-bottom: 30px;
 }
-.container{
+.container-1{
 	border: 10px solid @color-blue;
 	color: @text-color;
 	box-sizing: border-box;
 	font-family: Lato-Regular;
+	font-size: 18px;
 }
 .header-icons{
 	color: @text-color;
@@ -99,18 +137,29 @@ h3{
 .header{
 	.align-middle{
 		width: 190px;
-		.tab-title{
-			text-align: left;
+		.headings{
+			.tab-title{
+				text-align: left;
+			}
 		}
 		&:first-child{
-			width: 130px;
+			.headings{
+				width: 130px;
+				position: relative;
+				left: 100px;
+				margin: 0 auto;
+			}
 		}
 		&:nth-child(2){
-			width: 100px;	
+			.headings{
+				width: 100px;
+				position: relative;
+				left: 50px;
+				margin: 0 auto;
+			}
 		}
 		a{
 			color: @text-color;
-
 		}
 	}
 	.logo{
@@ -291,12 +340,12 @@ footer{
 }
 .add-input{
 	border:none;
-		background-color: #eee;
-		width: 300px;
-		.border-radius(10px);
-		height: 50px;
-		padding: 0 10px 0 20px;
-		margin: 10px;
+	background-color: #eee;
+	width: 300px;
+	.border-radius(10px);
+	height: 50px;
+	padding: 0 10px 0 20px;
+	margin: 10px;
 }
 .add-textarea{
 	width: 500px;
@@ -306,4 +355,138 @@ footer{
 	.border-radius(10px);
 	border: none;
 	padding: 20px;
+}
+.add-container{
+	margin-top: 50px;
+	h4{
+		color: #000;
+		margin: 0;
+	}
+	.title{
+		font-size: 16px;
+		border-bottom: 1px solid #a4a4a4;
+		padding-bottom: 10px;
+		h4{
+			vertical-align: middle;
+		}
+		.post-add-btn{
+			vertical-align: middle;
+			color: #fff;
+			border: none;
+			background-color:@color-blue;
+			.border-radius(2px);
+			box-shadow :0 0 3px @color-blue;
+			font-size: 16px;
+			font-family: Lato-Thin; 
+			margin-right: 20px;
+		}
+		input{
+			.border-radius(5px);
+			border: 1px solid #a4a4a4;
+			background: url('../img/search.png') no-repeat 150px center;
+			background-size: 15px 15px;
+			// padding-right: 20px;
+		}
+	}
+	.filter{
+		padding: 0 15px;
+		background-color: #eee;
+		.align-middle{
+			width: 15%;
+		}
+		select{
+			height: 35px;
+			width: 170px;
+			background-color: #fff;
+		}
+		input{
+			.border-radius(5px);
+			border: 1px solid #a4a4a4;
+			height: 35px;
+			width: 170px;
+		}
+	}
+	.lawyers-details{
+		margin: 20px 0;
+		border-bottom: 1px solid #a4a4a4;
+		// .lawyer{
+		// 	border-bottom: 1px solid #a4a4a4;
+		// }
+		.lawyer-name{
+			font-size: 24px;
+			color: #000;
+			font-family: Lato-Light;
+		}
+		.lawyer-type{
+			border: none;
+			box-shadow: none;
+			background-color: #eee;
+			.border-radius(5px);
+		}
+		.lawyer-content{
+			.pull-left{
+				width: 70%;
+			}
+			.pull-right{
+				width: 25%;
+				text-align: right;
+				button{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+.blue-btn{
+
+}
+.modal-input{
+	border: none;
+	padding: 5px;
+	font-size: 16px;
+	width: 100%;
+}
+.border-bottom-grey{
+	border-bottom: 1px solid #eee;
+}
+#add-post-modal{
+	.modal-dialog{
+		.modal-content{
+			.modal-header{
+				background-color: #000;
+				color: #fff;
+				h4{
+					color: #fff;
+				}
+				.close{
+					color: #fff;
+					opacity: 1;
+					text-shadow: none;
+					span{
+						color: #fff;
+					}
+				}
+			}
+			.modal-body{
+				padding: 0;
+				.project-title{
+				}
+				.project-desc{
+
+				}
+				textarea{
+					border: none;
+					width: 100%;
+					height: 150px;
+					resize: none;
+					font-size: 16px;
+				}
+			}
+			.modal-footer{
+				border-top: none;
+				margin: 0;
+				padding: 10px;
+			}
+		}
+	}
 }

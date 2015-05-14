@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -21,7 +22,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-       <div class="container">
+       <div class="container-1">
            <div class="header-icons clearfix wrapper">
                 <div class="right">
                    <span class="align-middle phone-icon"></span>
@@ -32,31 +33,110 @@
            </div>
            <div class="header text-center">
                <div class="align-middle">
-                    <p class="tab-title">home</p>
-                    <p class="under-line"></p>
+                  <div class="headings">
+                      <p class="tab-title">home</p>
+                      <p class="under-line"></p>
+                    </div>
                 </div>
                <div class="align-middle">
-                    <a href="index.html"><p class="tab-title" data-url="about">About</p></a>
-                    <p class="under-line" data-url="about"></p>
-                </div>
+                  <div class="headings">
+                      <a href="index.html"><p class="tab-title" data-url="about">About</p></a>
+                      <p class="under-line" data-url="about"></p>
+                    </div>
+                  </div>
                 <div class="logo align-middle">
                     
                 </div>
                 <div class="align-middle">
-                    <a href="post-advertisement.html"><p class="tab-title" data-url="adds">Post Advertisements</p></a>
-                    <p class="under-line" data-url="adds"></p>
+                  <div class="headings">
+                      <a href="post-advertisement.html"><p class="tab-title" data-url="adds">Post Advertisements</p></a>
+                      <p class="under-line" data-url="adds"></p>
+                    </div>
                 </div>
                 <div class="align-middle">
-                    <a href="recommended.html"><p class="tab-title" data-url="recommended">Recommended Lawyers</p></a>
-                    <p class="under-line" data-url="recommended"></p>
+                  <div class="headings">
+                      <a href="recommended.html"><p class="tab-title" data-url="recommended">Recommended Lawyers</p></a>
+                      <p class="under-line" data-url="recommended"></p>
+                    </div>
                 </div>
            </div>
-           <div class="recommended-lawyers text-center sections wrapper">
-               <h2>Recommended Lawyers</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellat perferendis veritatis accusamus nisi! Nisi, ab. Nesciunt odit, mollitia aut iusto saepe! Dignissimos eaque voluptatem, quo consequatur, magnam perspiciatis nemo.</p>
-               <p class="separator"></p>
-           </div>
-           <form action="">
+			<div class="add-container wrapper clearfix">
+				<div class="title clearfix">
+					<h4 class="pull-left">Post Advertisements</h4>
+					<div class="pull-right">
+						<button class="blue-btn post-add-btn" data-toggle="modal" data-target="#add-post-modal">Post an Add</button>
+						<input type="text" placeholder="Keyword search">
+					</div>
+				</div>
+				<div class="filter">
+					<form action="">
+						<span class="align-middle">Filter By :</span>
+						<select class="align-middle" name="" id="">
+							<option value="">Kind of post</option>
+						</select>
+						<select class="align-middle" name="" id="">
+							<option value="">state</option>
+						</select>
+						<input type="date" class="align-middle" placeholder="date">
+						<span class="align-middle">Clear all filter</span>
+					</form>
+				</div>
+				<div class="lawyers-details">
+					<div class="lawyer">
+						<div class="lawyer-title clearfix">
+							<p class="pull-left">
+								<span class="lawyer-name">Rakesh,</span>
+								<span class="lawyer-location">Bangalore</span>
+							</p>
+							<p class="pull-right">
+								<button class="lawyer-type">criminal</button>
+								<span class="lawyer-posted-date">23-4-2015</span>
+							</p>
+						</div>
+						<div class="lawyer-content clearfix">
+							<p class="pull-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reiciendis possimus, sapiente rerum odio nobis explicabo velit aliquam sint quos, totam, magni nihil accusamus laudantium eos atque ratione! Quaerat, iure!</p>
+							<p class="pull-right"><button class="blue-btn">Read More</button></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="add-post-modal" ng-controller="workspaceCtrl">
+				    <div class="modal-dialog">
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				          <h4 class="modal-title">New Add</h4>
+				        </div>
+				        <form action="">
+				          <div class="modal-body">
+				            <div class="project-title border-bottom-grey">
+				              <input class="modal-input" type="text" placeholder="Add Title">
+				            </div>
+
+				            <div class="project-desc border-bottom-grey">
+				              <textarea name="" id="" placeholder="describe your post here.."></textarea>
+				            </div>
+				            
+				            <!-- <div class="clearfix border-bottom-grey">
+				              <span>select workspace : </span>
+				            <select ng-model="project.workspace">
+				                <option value="">Select Workspace</option>
+				                <optionid ="{{workspace.id}}" value="{{workspace.id}}">{{workspace.name}}</option>
+				            </select>
+				            </div> -->
+
+				            <!-- <div class="border-bottom-grey hide">
+				              Add people
+				            </div> -->
+				          </div>
+				          <div class="modal-footer">
+				            <button type="submit" class="btn-green">Post Add</button>
+				          </div>
+				        </form>
+				      </div>
+				    </div>
+				</div>
+			</div>
+           <!-- <form action="">
                <div class="post-add text-center sections wrapper">
                    <h3>Add Lawyers</h3>
                    <div class="raw">
@@ -104,7 +184,7 @@
                        </p>
                    </div>
                </div>
-           </form>
+           </form> -->
            <footer>
                <p>Copyright <span>@lawyers4u</span> 2014, All right reserved</p>
            </footer>
@@ -113,6 +193,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

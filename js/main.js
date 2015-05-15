@@ -15,4 +15,6 @@ $('.header .align-middle p').removeClass('active-url');
 
 $(document).ready(function(){
     highlightLink();
+    console.log('sdfsdgfsd');
+    $('.container-1').css('min-height',$(window).height());
 })    

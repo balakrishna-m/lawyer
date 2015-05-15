@@ -94,13 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-a{
-    text-decoration: none;
-}
+
 div,p,input,textarea{
     box-sizing:border-box;
 }
-input:focus{
+input:focus,textarea:focus{
     outline: none;
 }
 @font-face {

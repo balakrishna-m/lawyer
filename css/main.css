@@ -98,7 +98,7 @@ textarea {
 div,p,input,textarea{
     box-sizing:border-box;
 }
-input:focus,textarea:focus{
+input:focus,textarea:focus,button:focus{
     outline: none;
 }
 @font-face {

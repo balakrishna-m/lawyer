@@ -17,4 +17,14 @@ $(document).ready(function(){
     highlightLink();
     console.log('sdfsdgfsd');
     $('.container-1').css('min-height',$(window).height());
-})    
+})  
+// function initialize() {
+//     var mapCanvas = document.getElementById('map-canvas');
+//     var mapOptions = {
+//       center: new google.maps.LatLng(13.024099, 77.643148),
+//       zoom: 14,
+//       mapTypeId: google.maps.MapTypeId.ROADMAP
+//     }
+//     var map = new google.maps.Map(mapCanvas, mapOptions)
+// }
+// google.maps.event.addDomListener(window, 'load', initialize);  
